@@ -1,0 +1,1 @@
+Tester2 is a class to test Seaside
