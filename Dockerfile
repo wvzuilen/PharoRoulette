@@ -9,4 +9,4 @@ RUN apt install libfontconfig1:i386 --yes
 RUN apt install libssl1.0.0:i386 --yes
 WORKDIR /pharo
 RUN curl get.pharo.org | bash
-RUN ./pharp Pharo.image eval 2+9
+RUN ./pharo Pharo.image eval 2+9
