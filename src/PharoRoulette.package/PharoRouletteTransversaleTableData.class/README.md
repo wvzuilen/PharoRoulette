@@ -1,0 +1,1 @@
+I'm a transversale  table data class

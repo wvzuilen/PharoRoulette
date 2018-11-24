@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "WouterVanZuilen 9/7/2017 14:25",
+	"super" : "PharoRouletteTableData",
+	"category" : "PharoRoulette",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PharoRouletteChevalTableData",
+	"type" : "normal"
+}

@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "WouterVanZuilen 9/7/2017 14:47",
+	"super" : "WAComponent",
+	"category" : "PharoRoulette",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"matrix"
+	],
+	"name" : "PharoRouletteTable",
+	"type" : "normal"
+}

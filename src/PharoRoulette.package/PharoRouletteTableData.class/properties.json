@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "WouterVanZuilen 9/7/2017 14:24",
+	"super" : "Object",
+	"category" : "PharoRoulette",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"row",
+		"col"
+	],
+	"name" : "PharoRouletteTableData",
+	"type" : "normal"
+}

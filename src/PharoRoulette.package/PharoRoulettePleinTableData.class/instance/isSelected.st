@@ -1,0 +1,3 @@
+testing
+isSelected
+^ self selected
