@@ -1,4 +1,4 @@
-FROM ubuntu:trusty AS PharoRoulette
+FROM ubuntu:trusty
 RUN dpkg --add-architecture i386
 RUN apt update
 RUN apt install curl --yes
