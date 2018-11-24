@@ -1,1 +1,1 @@
-Tester2 is a class to test Seaside
+Tester3 is a class to test Seaside
