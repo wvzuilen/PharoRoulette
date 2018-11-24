@@ -4,8 +4,6 @@ This project has started during the ESUG 2017. Inspired by the many speakers I w
 
 Rien ne va plus !
 
-
-
 ```Smalltalk
 Metacello new
  baseline:'PharoRoulette';
