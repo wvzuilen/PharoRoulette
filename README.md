@@ -6,7 +6,8 @@ Rien ne va plus !
 
 
 
-```Metacello new
+```
+Metacello new
  baseline:'PharoRoulette';
  repository: 'github://wvzuilen/PharoRoulette:master/src';
  load.```
