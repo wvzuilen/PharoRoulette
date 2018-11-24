@@ -4,11 +4,11 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                 echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
-                 echo 'Downloading pharo'
-                 dir("pharo"){
-                   sh 'curl get.pharo.org | bash'
-                 }
+                //  echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
+                //  echo 'Downloading pharo'
+                //  dir("pharo"){
+                //    sh 'curl get.pharo.org | bash'
+                //  }
                  // echo "Workspace: ${WORKSPACE}"
                  // sh './pharo Pharo.image eval 2+2'
             }
