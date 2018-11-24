@@ -13,5 +13,5 @@ RUN curl get.pharo.org | bash
 RUN echo 'kernel.sched_rt_runtime_us=-1' > /etc/sysctl.conf
 
 COPY /src /pharoroulette
-
-RUN /pharo/pharo Pharo.image eval --save "Metacello new baseline:'PharoRoulette'; repository: 'filetree://../pharoroulette'; load."
+RUN ./pharo Pharo.image eval --save "Metacello new baseline:'PharoRoulette'; repository: 'filetree://../pharoroulette'; load."
+RUN rm -rf /pharoroulette
