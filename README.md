@@ -6,7 +6,7 @@ Rien ne va plus !
 
 
 
-```
+```Smalltalk
 Metacello new
  baseline:'PharoRoulette';
  repository: 'github://wvzuilen/PharoRoulette:master/src';
