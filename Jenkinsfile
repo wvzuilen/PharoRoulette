@@ -1,14 +1,16 @@
 pipeline {
-    agent any
+    agent { dockerfile true }
     stages {
         stage('Build') {
             steps {
                 echo 'Building..'
                  echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
                  echo 'Downloading pharo'
-                 sh 'curl get.pharo.org | bash'
-                 echo "Workspace: ${WORKSPACE}"
-                 sh './pharo Pharo.image eval 2+2'
+                 dir("pharo"){
+                   sh 'curl get.pharo.org | bash'
+                 }
+                 // echo "Workspace: ${WORKSPACE}"
+                 // sh './pharo Pharo.image eval 2+2'
             }
         }
         stage('Test') {
@@ -19,6 +21,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
+                deleteDir()
             }
         }
     }
