@@ -1,1 +1,0 @@
-I'm a cheval table data class

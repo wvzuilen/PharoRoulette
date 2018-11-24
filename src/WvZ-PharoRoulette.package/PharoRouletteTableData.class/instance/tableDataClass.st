@@ -1,3 +1,0 @@
-subclassresponsibility
-tableDataClass
-	^ self subclassResponsibility
