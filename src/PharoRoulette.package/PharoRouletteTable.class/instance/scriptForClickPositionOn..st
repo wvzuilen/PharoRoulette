@@ -1,18 +1,15 @@
 rendering
 scriptForClickPositionOn: html
-	| pageX pageY left top height |
+	| pos |
+	pos := PharoRouletteClickPosition new.
 	^ html jQuery ajax
-		callback: [ :x | pageX := x ] value: JQEvent new pageX;
-		callback: [ :y | pageY := y ] value: JQEvent new pageY;
-		callback: [ :l | left := l ] value: html jQuery this offsetLeft;
-		callback: [ :t | top := t ] value: html jQuery this offsetTop;
-		callback: [ :h | height := h ] value: html jQuery this height;
+		callback: [ :x | pos x: x ] value: JQEvent new pageX;
+		callback: [ :y | pos y: y ] value: JQEvent new pageY;
+		callback: [ :l | pos left: l ] value: html jQuery this offsetLeft;
+		callback: [ :t | pos top: t ] value: html jQuery this offsetTop;
+		callback: [ :h | pos height: h ] value: html jQuery this height;
 		callback: [ :w | 
-			PharoRouletteClickPosition
-				x: pageX
-				y: pageY
-				left: left
-				top: top
-				height: height
-				width: w ]
+			pos
+				width: w;
+				logToTranscript ]
 			value: html jQuery this width
