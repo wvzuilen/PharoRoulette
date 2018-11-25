@@ -1,1 +1,0 @@
-I am a abstract table data class

@@ -1,1 +1,0 @@
-I'm a plein table data class

@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "PharoRoulette",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"x",
+		"y",
+		"left",
+		"top",
+		"height",
+		"width"
+	],
+	"name" : "PharoRouletteClickPosition",
+	"type" : "normal"
+}

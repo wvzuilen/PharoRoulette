@@ -1,3 +1,0 @@
-testing
-isSelected
-^ self selected
