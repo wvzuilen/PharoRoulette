@@ -5,7 +5,7 @@ This project has started during the ESUG 2017. Inspired by the many speakers I w
 Rien ne va plus !
 
 As this is a learning experience, below my findings:
-At first I had the idea to build a Roulette table made of seperate div's but this was too time-consuming. So I looked for an alternative... using a SVG image of a Roulette table I detect the relative position of the mouse click event. Using casscaded `callback: value:` messages I collect all the necessary attributes.
+At first I had the idea to build a Roulette table made of seperate div's but this was too time-consuming. So I looked for an alternative... using a SVG image of a Roulette table I detect the relative position of the mouse click event. Using casscaded `callback: value:` messages I collect all the necessary attributes:
 
 ```Smalltalk
 scriptForClickPositionOn: html
