@@ -3,8 +3,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
-                sh 'docker build -t wvzuilen/pharoroulette .'
+                echo 'Building with no cache...'
+                sh 'docker build --no-cache -t wvzuilen/pharoroulette .'
                 sh 'docker push wvzuilen/pharoroulette'
             }
         }
@@ -13,7 +13,7 @@ pipeline {
                 echo 'Testing..'
             }
         }
-        stage('Deploy') {
+        stage('Cleaning workspace...') {
             steps {
                 echo 'Deploying....'
                 deleteDir()
