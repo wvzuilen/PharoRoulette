@@ -13,7 +13,6 @@ pipeline {
                 sh 'docker push wvzuilen/pharoroulette'
             }
         }
-
     }
   post {
     always {
