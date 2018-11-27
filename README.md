@@ -21,7 +21,7 @@ scriptForClickPositionOn: html
 		callback: [ pos logToTranscript ]
 ```
 
-http://pillarhub.pharocloud.com/hub/mikefilonov/ajaxupdateseaside
+Note to myself: http://pillarhub.pharocloud.com/hub/mikefilonov/ajaxupdateseaside
 
 Metacello load script:
 ```Smalltalk
