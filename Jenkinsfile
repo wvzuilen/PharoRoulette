@@ -13,11 +13,11 @@ pipeline {
                 sh 'docker push wvzuilen/pharoroulette'
             }
         }
-        stage('Clean') {
-            steps {
-                echo 'Cleaning workspace....'
-                deleteDir()
-            }
-        }
+
     }
+  post {
+    always {
+        cleanWs()
+    }
+}
 }
