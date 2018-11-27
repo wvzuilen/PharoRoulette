@@ -8,8 +8,9 @@ LABEL description="Docker image with PharoRoulette installed and running op port
 
 # Installing PharoRoulette
 COPY /src /pharo/pharoroulette
-COPY preload.st /pharo
-COPY postload.st /pharo
+COPY /scripts/preload.st /pharo
+COPY /scripts/postload.st /pharo
+COPY /static /pharo/static
 
 RUN ./pharo Pharo.image st preload.st --save --quit
 RUN ./pharo Pharo.image st postload.st --save --quit

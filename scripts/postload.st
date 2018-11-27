@@ -1,4 +1,4 @@
-(Smalltalk at: #ZnZincServerAdaptor) startOn: 8088.
+(Smalltalk at: #ZnZincServerAdaptor) startOn: 8088 andServeFilesFrom: '/pharo/static'.
 
 WAAdmin applicationDefaults
     removeParent: WADevelopmentConfiguration instance.
