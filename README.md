@@ -20,7 +20,7 @@ renderClickScriptOn: html
 		callback: [ :t | self offsetTop: t asInteger ] value: html jQuery this offsetTop.
 ```
 ### Processing and responding
-After the click attributes are received, I want to detect which part of the table is clicked. To confirm the result I want to show a pointer at the spot where the table is clicked.
+After the click attributes are received, the backend determines which part of the table is clicked. To confirm the result I want to show a pointer at the spot where the table is clicked.
 
 Note to myself: http://pillarhub.pharocloud.com/hub/mikefilonov/ajaxupdateseaside
 
