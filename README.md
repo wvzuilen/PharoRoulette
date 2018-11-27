@@ -1,6 +1,6 @@
 # PharoRoulette Alpha
 
-This project has started during the ESUG 2017. Inspired by the many speakers I wanted to learn more about web development using Seaside and in particular using callbacks.
+This project has started during the ESUG 2017. Inspired by the many speakers I wanted to learn more about web development using Seaside and in particular using callbacks. I'm no professional Smalltalker so please be free comment my solutions.
 
 #### _Rien ne va plus !_
 
@@ -9,7 +9,7 @@ This project has started during the ESUG 2017. Inspired by the many speakers I w
 As this is a learning experience, below my findings:
 
 ### Detecting click input
-The first idea was to build a Roulette table made of seperate div's but this was way too time-consuming. So an alternative was made up... using a SVG image of a Roulette table the relative position of the mouse click event is detected. Using cascaded `callback: value:` messages all the necessary attributes are collected:
+The first idea was to build a Roulette table made of seperate div's but this was way too time-consuming. So an alternative was explored... using a image of a Roulette table the relative position of the mouse click event is detected; using cascaded `callback: value:` messages all the necessary attributes are collected:
 
 ```Smalltalk
 renderClickScriptOn: html
