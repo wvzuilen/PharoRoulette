@@ -29,7 +29,7 @@ After the click attributes are received, I want to detect which part of the tabl
 
 Note to myself: http://pillarhub.pharocloud.com/hub/mikefilonov/ajaxupdateseaside
 
-Metacello load script:
+### Metacello load script
 ```Smalltalk
 Metacello new
  baseline:'PharoRoulette';
