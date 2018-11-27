@@ -1,6 +1,6 @@
 # PharoRoulette Alpha
 
-This project has started during the ESUG 2017. Inspired by the many speakers I wanted to learn more about web development using Seaside and in particular using callbacks. I'm no professional Smalltalker so please be free comment my solutions.
+This project has started during the ESUG 2017. Inspired by the many speakers I wanted to learn more about web development using Seaside and in particular using callbacks. I'm no professional Smalltalker so please be free to comment my chosen solutions.
 
 #### _Rien ne va plus !_
 
