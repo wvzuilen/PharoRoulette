@@ -1,4 +1,4 @@
-# PharoRoulette (Work in progress !)
+# PharoRoulette Alpha
 
 This project has started during the ESUG 2017. Inspired by the many speakers I wanted to learn more about web development using Seaside and in particular using callbacks.
 
