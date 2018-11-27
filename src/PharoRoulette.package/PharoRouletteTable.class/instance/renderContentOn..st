@@ -1,12 +1,9 @@
 rendering
 renderContentOn: html
 	html image
-		id: 'table';
-		url: 'PharoRouletteStatic/table.svg';
-		onClick: (self scriptForClickPositionOn: html).
+		id: self class id;
+		url: self class imageUrl;
+		onClick: (self renderClickScriptOn: html).
 	html div
-		id: 'test';
-		with: 'X'
-
-	"(html jQuery ajax callback: [ 1 inspect ])."
-	"(html jQuery ajax callback: [ :x | x inspect ] value: JQEvent new pageX)."
+		id: 'pointerDiv';
+		with: [ self renderPointerOn: html ]

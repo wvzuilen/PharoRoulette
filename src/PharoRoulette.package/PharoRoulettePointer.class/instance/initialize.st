@@ -1,4 +1,5 @@
 initialization
 initialize
 	super initialize.
-	pointer := PharoRoulettePointer new
+	x := 0.
+	y := 0

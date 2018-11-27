@@ -1,17 +1,14 @@
 {
-	"commentStamp" : "WouterVanZuilen 9/7/2017 14:47",
+	"commentStamp" : "WouterVanZuilen 11/26/2018 21:47",
 	"super" : "WAComponent",
 	"category" : "PharoRoulette",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"pointer",
-		"height",
-		"width",
-		"offsetLeft",
-		"offsetTop"
+		"x",
+		"y"
 	],
-	"name" : "PharoRouletteTable",
+	"name" : "PharoRoulettePointer",
 	"type" : "normal"
 }
