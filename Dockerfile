@@ -10,6 +10,7 @@ COPY /src /pharo/pharoroulette
 
 COPY preload.st /pharo
 RUN ./pharo Pharo.image st preload.st --save --quit
+RUN ./pharo Pharo.image st postload.st --save --quit
 # RUN ./pharo Pharo.image st postload.st --quit
 
 RUN rm -rf /pharo/pharoroulette
