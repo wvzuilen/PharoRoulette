@@ -1,3 +1,0 @@
-rendering
-tableDataContent
-	^ self subclassResponsibility

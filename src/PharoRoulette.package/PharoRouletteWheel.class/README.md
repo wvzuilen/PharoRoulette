@@ -1,1 +1,0 @@
-The wheel of the board

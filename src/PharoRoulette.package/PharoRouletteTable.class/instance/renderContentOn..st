@@ -1,3 +1,12 @@
 rendering
 renderContentOn: html
-	html table: [ 1 to: 25 do: [ :row | html tableRow: [ 1 to: 7 do: [ :col | self renderTableCellForRow: row col: col on: html ] ] ] ]
+	html image
+		id: 'table';
+		url: 'PharoRouletteStatic/table.svg';
+		onClick: (self scriptForClickPositionOn: html).
+	html div
+		id: 'test';
+		with: 'X'
+
+	"(html jQuery ajax callback: [ 1 inspect ])."
+	"(html jQuery ajax callback: [ :x | x inspect ] value: JQEvent new pageX)."
