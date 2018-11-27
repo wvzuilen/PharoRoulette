@@ -9,7 +9,7 @@ This project has started during the ESUG 2017. Inspired by the many speakers I w
 As this is a learning experience, below my findings:
 
 ### Detecting click input
-At first I had the idea to build a Roulette table made of seperate div's but this was too time-consuming. So I looked for an alternative... using a SVG image of a Roulette table I detect the relative position of the mouse click event. Using casscaded `callback: value:` messages I collect all the necessary attributes:
+The first idea was to build a Roulette table made of seperate div's but this was way too time-consuming. So an alternative was made up... using a SVG image of a Roulette table the relative position of the mouse click event is detected. Using cascaded `callback: value:` messages all the necessary attributes are collected:
 
 ```Smalltalk
 renderClickScriptOn: html
@@ -20,7 +20,7 @@ renderClickScriptOn: html
 		callback: [ :t | self offsetTop: t asInteger ] value: html jQuery this offsetTop.
 ```
 ### Processing and responding
-After the click attributes are received, the backend determines which part of the table is clicked. To confirm the result I want to show a pointer at the spot where the table is clicked.
+After the click attributes are received, the backend determines which part of the table is clicked. To confirm the result a pointer is shown at the spot where the table is clicked.
 
 Note to myself: http://pillarhub.pharocloud.com/hub/mikefilonov/ajaxupdateseaside
 
