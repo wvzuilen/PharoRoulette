@@ -9,7 +9,7 @@ COPY /src /pharo/pharoroulette
 # RUN ./pharo Pharo.image config --save filetree://pharoroulette BaselineOfPharoRoulette
 
 COPY preload.st /pharo
-RUN ./pharo Pharo.image st preload.st --quit
+RUN ./pharo Pharo.image st preload.st --save --quit
 # RUN ./pharo Pharo.image st postload.st --quit
 
 RUN rm -rf /pharo/pharoroulette
