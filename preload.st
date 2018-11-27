@@ -1,4 +1,5 @@
 Metacello new
  baseline:'PharoRoulette';
- repository: 'filetree://pharoroulette/src';
- load
+ repository: 'filetree://pharoroulette';
+ load.
+ SmalltalkImage current saveSession.
