@@ -2,7 +2,7 @@ rendering
 renderContentOn: html
 	html image
 		id: self class id;
-		url: self class imageUrl;
+		url: (PRFileLibrary urlOf: #tableSvg);
 		onClick: (self renderClickScriptOn: html).
 	html div
 		id: 'pointerDiv';
