@@ -4,7 +4,7 @@ This project has started during the ESUG 2017. Inspired by the many speakers I w
 
 #### _Rien ne va plus !_
 
-![PharoRoulette table](./table.svg)
+![PharoRoulette table](./static/table.svg)
 
 As this is a learning experience, below my findings:
 
