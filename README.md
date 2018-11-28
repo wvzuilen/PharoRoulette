@@ -24,6 +24,11 @@ After the click attributes are received, the backend determines which part of th
 
 Note to myself: http://pillarhub.pharocloud.com/hub/mikefilonov/ajaxupdateseaside
 
+### Docker RUN command
+``` Docker
+docker run -d -p 8088:8088 --rm --name pharoroulette wvzuilen/pharoroulette:latest
+```
+
 ### Metacello load script
 ```Smalltalk
 Metacello new
