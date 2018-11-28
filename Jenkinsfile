@@ -14,6 +14,12 @@ pipeline {
                 sh 'docker push wvzuilen/pharoroulette:latest'
             }
         }
+        stage('Restart') {
+            steps {
+                echo 'Restarting PharoRoulette container...'
+                sh 'ssh -o StrictHostKeyChecking=No -i $AWS_KEY_PATH $AWS_HOST /home/ubuntu/restart_pr.sh'
+            }
+        }
     }
     post {
         always {
