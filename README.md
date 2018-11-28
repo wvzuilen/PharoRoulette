@@ -4,7 +4,7 @@ This project has started during the ESUG 2017. Inspired by the many speakers I w
 
 #### _Rien ne va plus !_
 
-![PharoRoulette table](./table.svg)
+![PharoRoulette table](./static/table.svg)
 
 As this is a learning experience, below my findings:
 
@@ -23,6 +23,11 @@ renderClickScriptOn: html
 After the click attributes are received, the backend determines which part of the table is clicked. To confirm the result a pointer is shown at the spot where the table is clicked.
 
 Note to myself: http://pillarhub.pharocloud.com/hub/mikefilonov/ajaxupdateseaside
+
+### Docker RUN command
+``` Docker
+docker run -d -p 8088:8088 --rm --name pharoroulette wvzuilen/pharoroulette:latest
+```
 
 ### Metacello load script
 ```Smalltalk
