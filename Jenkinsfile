@@ -12,7 +12,7 @@ pipeline {
                 sh 'docker build --no-cache -t wvzuilen/pharoroulette:latest .'
             }
         }
-        stage('Deploy') {
+        stage('Push') {
             steps {
                 echo 'Pushing to Docker Hub...'
                 sh 'docker push wvzuilen/pharoroulette:latest'

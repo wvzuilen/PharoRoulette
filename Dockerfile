@@ -3,16 +3,13 @@ FROM wvzuilen/pharo-seaside
 LABEL maintainer="wvzuilen@gmail.com"
 LABEL description="Docker image with PharoRoulette installed and running op port 8088"
 
-ENV PHAROROULETTE_STATIC .
-
-# RUN ./pharo Pharo.image eval --save "Metacello new baseline:'PharoRoulette'; repository: 'filetree://pharoroulette'; load."
-# RUN ./pharo Pharo.image config --save filetree://pharoroulette BaselineOfPharoRoulette
+ENV PHAROROULETTE_STATIC PharoRoulette
 
 # Installing PharoRoulette
 COPY /src /pharo/pharoroulette
 COPY /scripts/preload.st /pharo
 COPY /scripts/postload.st /pharo
-COPY /static /pharo/static
+COPY /static /pharo/static/PharoRoulette
 
 RUN ./pharo Pharo.image st preload.st --save --quit
 RUN ./pharo Pharo.image st postload.st --save --quit
