@@ -1,5 +1,9 @@
 pipeline {
     agent any
+    environment {
+                AWS_KEY_PATH  = credentials('AWS_KEY_PATH')
+                AWS_HOST      = credentials('AWS_HOST')
+            }
     stages {
         stage('Build') {
             steps {
