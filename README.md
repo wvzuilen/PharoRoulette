@@ -31,3 +31,6 @@ Metacello new
  repository: 'github://wvzuilen/PharoRoulette:master/src';
  load.
 ```
+
+To do's:
+* 1

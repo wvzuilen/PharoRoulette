@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building with no cache...'
+                echo 'Building without cache...'
                 sh 'docker login'
                 sh 'docker build --no-cache -t wvzuilen/pharoroulette:latest .'
             }
