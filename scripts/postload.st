@@ -1,6 +1,12 @@
-(Smalltalk at: #ZnZincStaticServerAdaptor) startOn: 8088 andServeFilesFrom: '/pharo/static'.
+ZnZincServerAdaptor  startOn: 8080.
+ZnZincServerAdaptor default server debugMode: true.
+ZnServer default logToStandardOutput.
 
 WAAdmin applicationDefaults
     removeParent: WADevelopmentConfiguration instance.
+
 WADispatcher default handlers do: [ :each | WADispatcher default unregister: each ].
-(Smalltalk at: #WAAdmin) register: PharoRoulette asApplicationAt: 'PharoRoulette'.
+
+(WAAdmin register: PharoRoulette asApplicationAt: 'image')
+    preferenceAt: #serverPath put: '/'.
+WAAdmin defaultDispatcher defaultName: 'image'.
