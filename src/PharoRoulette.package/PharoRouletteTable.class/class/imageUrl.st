@@ -1,3 +1,3 @@
 accessing
 imageUrl
-	^ PharoRoulette staticFolder , '/table.svg'
+	^ 'static/table.svg'
