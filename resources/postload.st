@@ -1,6 +1,6 @@
-ZnZincServerAdaptor  startOn: 8088.
-ZnZincServerAdaptor default server debugMode: true.
-ZnZincServerAdaptor default server logToTranscript.
+ZnZincServerAdaptor  startOn: 8080.
+"ZnZincServerAdaptor default server debugMode: true."
+"ZnZincServerAdaptor default server logToTranscript."
 
 WAAdmin applicationDefaults
     removeParent: WADevelopmentConfiguration instance.
