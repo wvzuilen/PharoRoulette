@@ -3,21 +3,27 @@ FROM wvzuilen/pharo-seaside
 LABEL maintainer="wvzuilen@gmail.com"
 LABEL description="Docker image with PharoRoulette installed and running op port 8088"
 
-ENV PHAROROULETTE_STATIC PharoRoulette
-
-# Installing PharoRoulette
+# Copy and install Smalltalk code
 COPY /src /pharo/pharoroulette
-COPY /scripts/preload.st /pharo
-COPY /scripts/postload.st /pharo
-COPY /static /pharo/static/PharoRoulette
-
+COPY /resources/preload.st /pharo
+COPY /resources/postload.st /pharo
+WORKDIR /pharo
 RUN ./pharo Pharo.image st preload.st --save --quit
 RUN ./pharo Pharo.image st postload.st --save --quit
 
 RUN rm -rf /pharo/pharoroulette
 
-# Starting Pharo after a container is started
-CMD ["/pharo/pharo", "Pharo.image","--no-quit"]
+# Install and config NGINX
+RUN apt install nginx --yes
+COPY ./resources/nginx.conf /etc/nginx
 
-# Exposing port 8088
-EXPOSE 8088
+# Copy static files used by the Very Nice Demo
+COPY /static /pharo/static
+
+# Copy container start script
+COPY /resources/start.sh /pharo
+RUN chmod +x /pharo/start.sh
+CMD ["/pharo/start.sh"]
+
+# Expose port 8081
+EXPOSE 8081
