@@ -4,6 +4,7 @@ LABEL maintainer="wvzuilen@gmail.com"
 LABEL description="Docker image with PharoRoulette installed and running op port 8088"
 
 # Copy and install Smalltalk code
+COPY /src /pharo/pharoroulette
 COPY /resources/preload.st /pharo
 COPY /resources/postload.st /pharo
 WORKDIR /pharo
