@@ -8,5 +8,5 @@ WAAdmin applicationDefaults
 WADispatcher default handlers do: [ :each | WADispatcher default unregister: each ].
 
 (WAAdmin register: PharoRoulette asApplicationAt: 'image')
-    preferenceAt: #serverPath put: '/'.
+    preferenceAt: #serverPath put: '/pharoroulette/'.
 WAAdmin defaultDispatcher defaultName: 'image'.
