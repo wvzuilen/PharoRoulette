@@ -2,6 +2,8 @@
 
 This project has started during the ESUG 2017. Inspired by the many speakers I wanted to learn more about web development using Seaside and in particular using callbacks. I'm no professional Smalltalker so please be free to comment my chosen solutions.
 
+https://statusconcept.nl/pharoroulette/
+
 #### _Rien ne va plus !_
 
 ![PharoRoulette table](./static/table.svg)
